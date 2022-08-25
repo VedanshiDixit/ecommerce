@@ -21,7 +21,7 @@ const User = require("./models/user");
 mongoose
   .connect(process.env.MDB_CONNECT, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
   })
   .then(() => {
     console.log("Database is connected");
