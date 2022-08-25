@@ -16,7 +16,7 @@ const instance = new Razorpay({
   key_id: process.env.RZP_key_id,
   key_secret: process.env.RZP_key_secret,
 });
-router.post("/user/order", data, isLoggedIn, (req, res) => {
+router.post("/user/order", isLoggedIn, (req, res) => {
   try {
     let reciept = "ODRCPT_ID_" + uuid().slice(-12, -1);
     const data = req.body;

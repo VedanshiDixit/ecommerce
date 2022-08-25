@@ -1,11 +1,10 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
 const fs = require("fs");
 const multer = require("multer");
 const app = express();
-require("dotenv").config();
-const seed = require("./seed");
 const prodRoutes = require("./routes/product");
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
@@ -77,6 +76,6 @@ app.use('*',(req,res)=>{
   res.render('error/error')
 })
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Server started at port ${process.env.PORT || 3000}`);
+app.listen(process.env.PORT || 5000, () => {
+  console.log(`Server started at port ${process.env.PORT || 5000}`);
 });
