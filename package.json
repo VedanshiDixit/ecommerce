@@ -1,13 +1,12 @@
 {
-  "name": "apna-cart-v1-main",
+  "name": "shophere",
   "version": "1.0.0",
   "description": "An E-commerce application built with CRUD functionality, and REST architechture.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js"
   },
-  "author": "",
+  "author": "Vedanshi Dixit",
   "license": "ISC",
   "dependencies": {
     "connect-flash": "^0.1.1",
